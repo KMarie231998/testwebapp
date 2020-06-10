@@ -6,7 +6,6 @@ $conn = sqlsrv_connect($serverName, $connectionInfo);
 if(!$conn){
   die("Error connection failed:".sqlsrv_errors());
 }
-echo "Connection to DB:Success!";
 
 $sql=" SELECT * FROM [dbo].[restaurant]";
 $getResults = sqlrsv_query($conn, $sql);
